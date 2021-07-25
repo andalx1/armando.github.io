@@ -15,9 +15,9 @@ font-family: 'Dancing Script', cursive;
     display: block;
     color: #fcf9f9;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.1rem;
   }
   .topnav a:hover {
     background-color: #ddd;
@@ -36,32 +36,31 @@ font-family: 'Dancing Script', cursive;
     background: rgb(131, 181, 193);
     font-family: 'Syncopate', sans-serif;
     display: grid;
-    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
-                        "landscape   landscape   landscape   landscape     landscape"
-                        "event   event   event   event   event"
+    grid-template-areas:"space     logo   chamname   chamenu   space1"
+                        "space   landscape   landscape   landscape     space1"
+                        "space   event   event   event   space1"
                         "space   purpose   purpose   purpose   space1"
                         "space   goals   goals   goals    space1"
                         "space   compinf    compinf   compinf   space1"
                         "space   fab1   fab2   fab3    space1"
-                        "footer   footer     footer      footer2    footer2";
+                        "space   footer     footer      footer2    space1";
   }
   
   .contehome .logo {
-    background: rgb(253, 43, 43);
+    background: rgb(220, 190, 211);
     grid-area: logo;
-    border-radius: 0 0 0 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 18rem;
+    padding-top: .8rem;
   }
   .contehome .chamname {
-    background: rgb(253, 43, 43);
+    background: rgb(220, 190, 211);
     grid-area: chamname;
+    line-height: .2rem;
   }
   .contehome .chamenu {
-    background: rgb(253, 43, 43);
+    background: rgb(220, 190, 211);
     grid-area: chamenu;
   }
   .contehome .space {
@@ -119,7 +118,7 @@ font-family: 'Dancing Script', cursive;
     grid-area:fab3;
   }
   .contehome .footer{
-    background-color: #303031;
+    background-color: #734071;
     padding: 2.5rem 0rem 2.5rem 11rem;
     color: white;
     grid-area:footer;
@@ -127,7 +126,7 @@ font-family: 'Dancing Script', cursive;
     line-height: 2.5rem;
   }
   .contehome .footer2{
-    background-color: #303031;
+    background-color: #734071;
     padding: 4rem 8rem 0rem 0rem;
     color: white;
     grid-area:footer2;
@@ -164,11 +163,10 @@ font-family: 'Dancing Script', cursive;
     
   }
   .titulo {
-    padding-top: .5rem;
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1rem;
-    color: rgb(249, 250, 248);
-    text-shadow: 1px 1px 15px black, 0 0 .2em blue, 0 0 0.2em blue;
+    padding-top: 0rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: rgb(29, 16, 26);
   }
   .chamname{
     font-family: 'Syncopate', sans-serif;
@@ -179,9 +177,10 @@ font-family: 'Dancing Script', cursive;
     padding-top: 2rem;
   }
   .moto {
-    padding: 1rem;
-    font-size: 1rem;
-    color: rgb(249, 249, 252);
+    padding: rem;
+    font-size: 3.7rem;
+    color: rgb(101, 115, 102);
+    padding-bottom: 3rem;
     } 
   .landscape{
       width: 100%;
