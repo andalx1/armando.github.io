@@ -47,24 +47,20 @@ font-family: 'Dancing Script', cursive;
                         "space   fab1   fab2   fab3    space1"
                         "space   footer     footer      footer2    space1";
   }
-  
   .contehome .chamname {
     background: rgb(220, 190, 211);
     grid-area: chamname;
-    line-height: .2rem;
     display: flex;
-
-  }
-  .moto{
-      background: crimson;
-      padding: 0;
-  }
-  .titulo{
-      background: darkkhaki;
+    justify-content: center;
+    align-items: center;
   }
   .contehome .chamenu {
+    font-family: 'Syncopate', sans-serif;
     background: rgb(220, 190, 211);
     grid-area: chamenu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contehome .space {
     background: #fcf9f9;
@@ -160,31 +156,33 @@ font-family: 'Dancing Script', cursive;
     text-decoration: none;
     color: aliceblue;
   }
-  
-  .logo img{
-    width: 6rem;
-    
-  }
-  .titulo {
-    padding-top: 0rem;
+
+.pic1 img{
+  width: 4rem;
+  margin: .5rem;
+}
+  .tit{
+    padding: 0.5rem;
+    line-height: 0.2rem;
+    text-align: center;
+    }
+  .titulo a{
     font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(29, 16, 26);
+    text-decoration: none;
   }
-  .chamname{
-    font-family: 'Syncopate', sans-serif;
-    padding: .6rem;
+  .titulo a{
+
   }
-  .chamenu {
-    font-family: 'Syncopate', sans-serif;
-    padding-top: 2rem;
-  }
-  .moto {
-    padding: rem;
-    font-size: 3.7rem;
+  .moto a{
+    font-size: 1.2rem;
     color: rgb(101, 115, 102);
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+
     } 
+ 
   .landscape{
       width: 100%;
       position: relative;
@@ -214,7 +212,6 @@ font-family: 'Dancing Script', cursive;
   .presh1, .presh2, .presh3{
     font-size: .9rem;
   }
-  
   .join{
     padding: .7rem;
     border-radius: 1rem;
@@ -239,7 +236,6 @@ font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     padding-left: 2rem;
   }
-  
   .home {
     padding: 4rem;
   }
@@ -277,8 +273,6 @@ font-family: 'Dancing Script', cursive;
   }
   .three img{
     width:20rem;
-  }
-  .anu1{
   }
   .temp1{
     font-size: 5rem;
