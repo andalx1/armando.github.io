@@ -38,7 +38,7 @@ font-family: 'Dancing Script', cursive;
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas:"space     logo   chamname   chamenu   space1"
+    grid-template-areas:"space   chamname   chamenu   chamenu   space1"
                         "space   landscape   landscape   landscape     space1"
                         "space   event   event   event   space1"
                         "space   purpose   purpose   purpose   space1"
@@ -48,16 +48,19 @@ font-family: 'Dancing Script', cursive;
                         "space   footer     footer      footer2    space1";
   }
   
-  .contehome .logo {
-    background: rgb(220, 190, 211);
-    grid-area: logo;
-    padding-left: 18rem;
-    padding-top: .8rem;
-  }
   .contehome .chamname {
     background: rgb(220, 190, 211);
     grid-area: chamname;
     line-height: .2rem;
+    display: flex;
+
+  }
+  .moto{
+      background: crimson;
+      padding: 0;
+  }
+  .titulo{
+      background: darkkhaki;
   }
   .contehome .chamenu {
     background: rgb(220, 190, 211);
