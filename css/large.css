@@ -44,7 +44,7 @@ font-family: 'Dancing Script', cursive;
                         "space   imagen2   purpose   purpose   space1"
                         "space   goals   goals   imagen3    space1"
                         "space   compinf    compinf   compinf   space1"
-                        "space   footer     footer      footer2    space1";
+                        "footer   footer     footer      footer2    footer2";
   }
   .contehome .chamname {
     background: rgb(220, 190, 211);
@@ -148,7 +148,7 @@ font-family: 'Dancing Script', cursive;
     color: white;
     grid-area:footer;
     text-decoration: none;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
   }
   .contehome .footer2{
     background-color: #8c868c;
