@@ -13,7 +13,8 @@ font-family: 'Dancing Script', cursive;
   .topnav a {
     float: left;
     display: block;
-    color: #fcf9f9;
+    color: #fdfdfc;
+    text-shadow: 2px 2px 6px #312c4e;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
@@ -33,18 +34,16 @@ font-family: 'Dancing Script', cursive;
   
   /*grid de home html xxxxxxxxxxxxxxxxXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   .contehome {
-    background: rgb(131, 181, 193);
     font-family: 'Syncopate', sans-serif;
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas:"space   chamname   chamenu   chamenu   space1"
+    grid-template-areas:"chamname   chamname   chamenu   chamenu   chamenu"
                         "space   landscape   landscape   landscape     space1"
-                        "space   event   event   event   space1"
-                        "space   purpose   purpose   purpose   space1"
-                        "space   goals   goals   goals    space1"
+                        "space   event   event   imagen1   space1"
+                        "space   imagen2   purpose   purpose   space1"
+                        "space   goals   goals   imagen3    space1"
                         "space   compinf    compinf   compinf   space1"
-                        "space   fab1   fab2   fab3    space1"
                         "space   footer     footer      footer2    space1";
   }
   .contehome .chamname {
@@ -63,7 +62,7 @@ font-family: 'Dancing Script', cursive;
     align-items: center;
   }
   .contehome .space {
-    background: #fcf9f9;
+    background: #f3f2f2;
     grid-area: space;
   }
   .contehome .space1 {
@@ -78,19 +77,46 @@ font-family: 'Dancing Script', cursive;
   }
   .contehome .event {
     padding: 2rem;
-    background: rgb(136, 240, 32);
+    background: rgb(251, 252, 250);
     grid-area: event;
+    font-family: 'Alata', sans-serif;
+    padding: 8rem;
+    font-size: 2rem;
+
   }
+  .contehome .imagen1 {
+    grid-area: imagen1;
+    padding: 2rem;
+  }
+  .contehome .imagen2 {
+    grid-area: imagen2;
+    padding: 2rem;
+  }
+  .contehome .imagen3 {
+    grid-area: imagen3;
+    padding: 2rem;
+  }
+
   .contehome .purpose{
-    padding: 2.5rem 2.5rem 0;
-    background: #fcf9f9;
-    grid-area:purpose;
+    padding: 2rem;
+    background: rgb(251, 252, 250);
+    grid-area: purpose;
+    font-family: 'Alata', sans-serif;
+    padding: 8rem;
+    font-size: 2rem;
   }
   .contehome .goals{
-    padding: 3rem;
-    background: #fcf9f9;
-    grid-area:goals;
+    padding: 2rem;
+    background: rgb(251, 252, 250);
+    grid-area: goals;
+    font-family: 'Alata', sans-serif;
+    padding: 8rem;
+    font-size: 2rem;
   }
+  .churoza img, .rojo img, .flia img{
+    width: 100%;
+  }
+  
   .goals p{
     padding-top: 1.5rem;
     line-height: 1.7rem;
@@ -117,7 +143,7 @@ font-family: 'Dancing Script', cursive;
     grid-area:fab3;
   }
   .contehome .footer{
-    background-color: #734071;
+    background-color: #8c868c;
     padding: 2.5rem 0rem 2.5rem 11rem;
     color: white;
     grid-area:footer;
@@ -125,7 +151,7 @@ font-family: 'Dancing Script', cursive;
     line-height: 2.5rem;
   }
   .contehome .footer2{
-    background-color: #734071;
+    background-color: #8c868c;
     padding: 4rem 8rem 0rem 0rem;
     color: white;
     grid-area:footer2;
@@ -171,16 +197,16 @@ font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     color: rgb(29, 16, 26);
     text-decoration: none;
-  }
-  .titulo a{
+    text-shadow: 2px 2px 14px #9895ab;
 
   }
   .moto a{
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     color: rgb(101, 115, 102);
     padding-bottom: 2rem;
     text-decoration: none;
-
+    text-shadow: 2px 2px 9px #f9f8fa;
     } 
  
   .landscape{
@@ -189,6 +215,7 @@ font-family: 'Dancing Script', cursive;
   }
   .landscape img{
     width: 100%;
+    height: 36rem;
   }
   .townfot1, .townfot2, .townfot3{
     width: 100%;
@@ -215,7 +242,7 @@ font-family: 'Dancing Script', cursive;
   .join{
     padding: .7rem;
     border-radius: 1rem;
-    background-color: #faf9fc;
+    background-color: #dcbad6;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -240,14 +267,14 @@ font-family: 'Dancing Script', cursive;
     padding: 4rem;
   }
   .anuncio{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     width: 45%;
     height: 50%;
     overflow:auto;
     position: absolute;
     right: 1rem;
-    top: 1rem;
+    top: 20rem;
     padding: 1rem;
     display: flex;
     justify-content: right;
@@ -255,28 +282,7 @@ font-family: 'Dancing Script', cursive;
     flex-direction: column;
     text-shadow: 2px 2px 2px rgb(12, 12, 12);
   }
-  .anuncio11{
-    opacity: .8;
-    background: rgb(254, 255, 254);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5rem;
-    color: black;
-    position: absolute;
-    right: 3rem;
-    bottom: 2rem;
-    border-radius: 1rem;
-    padding: .5rem;
-    display: flex;
-    align-items:center;
-    flex-direction: row;
-  justify-content:space-around;
-  }
-  .three img{
-    width:20rem;
-  }
-  .temp1{
-    font-size: 5rem;
-  }
+
   /*------------------itagui---------------------------------------------------*/
   .itagui {
     background: rgb(131, 181, 193);
