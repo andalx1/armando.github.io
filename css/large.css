@@ -149,6 +149,8 @@ font-family: 'Dancing Script', cursive;
     grid-area:footer;
     text-decoration: none;
     line-height: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+
   }
   .contehome .footer2{
     background-color: #8c868c;
