@@ -46,14 +46,14 @@ font-family: 'Dancing Script', cursive;
                         "space   compinf    compinf   compinf   space1"
                         "footer   footer     footer      footer2    footer2";
   }
-  .contehome .chamname {
+  .contehome .chamname,  .productos .chamname {
     background: rgb(220, 190, 211);
     grid-area: chamname;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .contehome .chamenu {
+  .contehome .chamenu,  .productos .chamenu {
     font-family: 'Syncopate', sans-serif;
     background: rgb(220, 190, 211);
     grid-area: chamenu;
@@ -61,19 +61,37 @@ font-family: 'Dancing Script', cursive;
     justify-content: center;
     align-items: center;
   }
-  .contehome .space {
+  .contehome .space,   .productos .space {
     background: #f3f2f2;
     grid-area: space;
   }
-  .contehome .space1 {
+  .contehome .space1, .productos .space1 {
     background: #fcf9f9;
     grid-area: space1;
   }
-  .contehome .temp {
-    grid-area: temp;
+  .contehome .footer, .productos .footer {
+    background-color: #8c868c;
+    padding: 2.5rem 0rem 2.5rem 11rem;
+    color: white;
+    grid-area:footer;
+    text-decoration: none;
+    line-height: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
   }
+  .contehome .footer2, .productos .footer2{
+    background-color: #8c868c;
+    padding: 4rem 8rem 0rem 0rem;
+    color: white;
+    grid-area:footer2;
+  }
+
+
+
   .contehome .landscape {
     grid-area: landscape;
+    width: 100%;
+    position: relative;
+
   }
   .contehome .event {
     padding: 2rem;
@@ -82,7 +100,6 @@ font-family: 'Dancing Script', cursive;
     font-family: 'Alata', sans-serif;
     padding: 8rem;
     font-size: 2rem;
-
   }
   .contehome .imagen1 {
     grid-area: imagen1;
@@ -96,7 +113,6 @@ font-family: 'Dancing Script', cursive;
     grid-area: imagen3;
     padding: 2rem;
   }
-
   .contehome .purpose{
     padding: 2rem;
     background: rgb(251, 252, 250);
@@ -116,7 +132,6 @@ font-family: 'Dancing Script', cursive;
   .churoza img, .rojo img, .flia img{
     width: 100%;
   }
-  
   .goals p{
     padding-top: 1.5rem;
     line-height: 1.7rem;
@@ -125,38 +140,6 @@ font-family: 'Dancing Script', cursive;
     background: #fcf9f9;
     grid-area: compinf;
     padding: 3rem;
-  }
-  .contehome .fab1{
-    font-family: 'Syncopate', sans-serif;
-    background: #fcf9f9;
-    grid-area:fab1;
-  }
-  .contehome .fab2{
-    font-family: 'Syncopate', sans-serif;
-    background: #fcf9f9;
-    grid-area:fab2;
-  
-  }
-  .contehome .fab3{
-    font-family: 'Syncopate', sans-serif;
-    background: #fcf9f9;
-    grid-area:fab3;
-  }
-  .contehome .footer{
-    background-color: #8c868c;
-    padding: 2.5rem 0rem 2.5rem 11rem;
-    color: white;
-    grid-area:footer;
-    text-decoration: none;
-    line-height: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-
-  }
-  .contehome .footer2{
-    background-color: #8c868c;
-    padding: 4rem 8rem 0rem 0rem;
-    color: white;
-    grid-area:footer2;
   }
   .footer2 a{
     display: flex;
@@ -184,7 +167,6 @@ font-family: 'Dancing Script', cursive;
     text-decoration: none;
     color: aliceblue;
   }
-
 .pic1 img{
   width: 4rem;
   margin: .5rem;
@@ -200,7 +182,6 @@ font-family: 'Dancing Script', cursive;
     color: rgb(29, 16, 26);
     text-decoration: none;
     text-shadow: 2px 2px 14px #9895ab;
-
   }
   .moto a{
     font-family: 'Montserrat', sans-serif;
@@ -210,36 +191,9 @@ font-family: 'Dancing Script', cursive;
     text-decoration: none;
     text-shadow: 2px 2px 9px #f9f8fa;
     } 
- 
-  .landscape{
-      width: 100%;
-      position: relative;
-  }
-  .landscape img{
+   .landscape img{
     width: 100%;
     height: 36rem;
-  }
-  .townfot1, .townfot2, .townfot3{
-    width: 100%;
-    height:15rem;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .fabinfo1, .fabinfo2, .fabinfo3{
-    background-color: #312c4e;
-    color: white;
-    height: 90%;
-    border-radius: 1rem;
-    padding: .5rem;
-    margin: .5rem;
-    box-shadow: 2px 2px 9px black;
-    margin-bottom: 4rem;
-    line-height: 1.5rem;
-  }
-  .fab1, .fab2, .fab3 p{
-    font-size: .8rem;
-  }
-  .presh1, .presh2, .presh3{
-    font-size: .9rem;
   }
   .join{
     padding: .7rem;
@@ -265,9 +219,6 @@ font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     padding-left: 2rem;
   }
-  .home {
-    padding: 4rem;
-  }
   .anuncio{
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -285,498 +236,22 @@ font-family: 'Dancing Script', cursive;
     text-shadow: 2px 2px 2px rgb(12, 12, 12);
   }
 
-  /*------------------itagui---------------------------------------------------*/
-  .itagui {
-    background: rgb(131, 181, 193);
-    font-family: 'Josefin Sans', sans-serif;
+  /*------------------productos---------------------------------------------------*/
+  .productos {
+    font-family: 'Syncopate', sans-serif;
     display: grid;
-    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
-                       "space   title   title   title   space1"
-                        "space   ita1   ita1   ita2     space1"
-                        "space   ita3   ita4   ita4   space1"
-                        "space   title2   title2   title2    space1"
-                        "space   itaeve1    itaeve2   itaeve3   space1"
-                        "space   fab1   fab2   fab3    space1"
+    grid-template-areas:"chamname   chamname   chamenu   chamenu   chamenu"
+                        "space   im1   im2   im3     space1"
+                        "space   im4   im5   im6     space1"
+                        "space   im7   im8   im9     space1"
+                        "space   im10  im11  im12    space1"
+                        "space   compinf    compinf   compinf   space1"
                         "footer   footer     footer      footer2    footer2";
   }
-  .itagui .logo {
-    background: rgb(253, 43, 43);
-    grid-area: logo;
-    border-radius: 0 0 0 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .itagui .chamname {
-    background: rgb(253, 43, 43);
-    grid-area: chamname;
-  }
-  .itagui .chamenu {
-    background: rgb(253, 43, 43);
-    grid-area: chamenu;
-  }
-  .itagui .space {
-    grid-area: space;
-  }
-  .itagui .space1 {
-    grid-area: space1;
-  }
-  .itagui .ita1 {
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    grid-area: ita1;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;
-  }
-  .itagui .ita2 {
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    grid-area: ita2;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;
-  }
-  .itagui .ita3 {
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    grid-area: ita3;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;
-  }
-  .itagui .ita4 {
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    grid-area: ita4;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;}
-  .itagui .title{
-    grid-area: title;
-    padding: 1rem;
-  }
-  .itagui .title2{
-    grid-area: title2;
-    padding: 1rem;
-  }
-  .itagui .itaeve1{
-    grid-area: itaeve1;
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;
-  }
-  .itagui .itaeve2{
-    grid-area: itaeve2;
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;
-  
-  }
-  .itagui .itaeve3{
-    grid-area: itaeve3;
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: #312c4e;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: .2rem;
-  
-  }
-  .itagui .footer{
-    margin-top: 1rem;
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 2.5rem 0rem 2.5rem 11rem;
-    color: white;
-    grid-area:footer;
-    text-decoration: none;
-    line-height: 2.5rem;
-  }
-  .itagui .footer2{
-    margin-top: 1rem;
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 4rem 8rem 0rem 0rem;
-    color: white;
-    grid-area:footer2;
-  }
-  .ita1 img, .ita2 img, .ita3 img, .ita4 img{
-    width: 100%;
-    height: 55%;
-    border-radius: .5rem;
-  }
-  
-  .ita11, .ita12, .ita13, .ita14{
-    height: 15%;
-    padding: 1rem;
-  }
-  .ita2 {
-    padding: 2rem;
-  }
-  .ita1 h2, .ita2 h2, .ita3 h2, .ita4 h2{
-    padding-left: 3rem;
-  }
-  .eve1 img, .eve2 img, .eve3 img{
-    width:100%;
-    height: 45%;
-  }
-  .itaeve1 h2, .itaeve2 h2, .itaeve3 h2{
-    padding-left: 3rem;
-  }
-  .itaeve11, .itaeve12, .itaeve13{
-    padding: 1rem;
-  }
-  /*------join------------------------------------------------------------------*/
-  .joinus {
-    background: rgb(131, 181, 193);
-    font-family: 'Josefin Sans', sans-serif;
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr 1fr 15%;
-    grid-template-rows: repeat(8, auto);
-    grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
-                       "space   joinfo   joinfo   joinfo   space1"
-                        "space   contenido   contenido contenido     space1"
-                        "space   ita3   ita4   ita4   space1"
-                        "space   title2   title2   title2    space1"
-                        "space   itaeve1    itaeve2   itaeve3   space1"
-                        "space   fab1   fab2   fab3    space1"
-                        "footer   footer     footer      footer2    footer2";
-  }
-  .joinus .logo {
-    background: rgb(253, 43, 43);
-    grid-area: logo;
-    border-radius: 0 0 0 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .joinus .chamname {
-    background: rgb(253, 43, 43);
-    grid-area: chamname;
-  }
-  .joinus .chamenu {
-    background: rgb(253, 43, 43);
-    grid-area: chamenu;
-  }
-  .joinus .space {
-    grid-area: space;
-  }
-  .joinus .space1 {
-    grid-area: space1;
-  }
-  .joinus .joinfo {
-    box-shadow: 2px 2px 9px solid black;
-    background-color: white;
-    color: black;
-    grid-area: joinfo;
-    margin: .3rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: 2rem;
-    margin-top: 1.5rem;
-  }
-  .joinus .contenido{
-    grid-area: contenido;
-  
-  }
-  .joinus .footer{
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 2.5rem 0rem 2.5rem 11rem;
-    color: white;
-    grid-area:footer;
-    text-decoration: none;
-    line-height: 2.5rem;
-  }
-  .joinus .footer2{
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 4rem 8rem 0rem 0rem;
-    color: white;
-    grid-area:footer2;
-  }
-  .box3, .box2, .box1{
-    background-color: white;
-    box-shadow: 2px 2px 9px solid black;
-    color: #312c4e;
-    margin: .3rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-    padding: 2rem;
-  }
-  .box3 li, .box2 li, .box1 li{
-    list-style: none;
-  }
-  .cuadros {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .cuadros div{
-    width: 12rem;
-    height: 35rem;
-    background: rgb(32, 25, 49);
-    margin: .4rem;
-    color: #f7f6fa;
-    padding: .5rem;
-    border-radius: .5rem;
-    font-size: .8rem;
-  }
-  .cuadros h3, .cuadros h4{
-    text-align: center;
-  }
-  
-  .contenido{
-    margin-top: 1.5rem;
-  }
-  input, textarea{
-    background: rgb(248, 253, 152);
-  }
-  /*--------directory----------------------------------------------------------------*/
-  .directory {
-    background: rgb(131, 181, 193);
-    font-family: 'Josefin Sans', sans-serif;
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr 1fr 15%;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:"logo    chamname   chamname   chamenu   chamenu"
-                        "space   solla      auteco     ternium   space1"
-                        "space   union      euro       soberana  space1"
-                        "space   empaques   provecol   text      space1"
-                        "footer  footer     footer      footer2    footer2";
-  }
-  .directory .logo {
-    background: rgb(253, 43, 43);
-    grid-area: logo;
-    border-radius: 0 0 0 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .directory .chamname {
-    background: rgb(253, 43, 43);
-    grid-area: chamname;
-  }
-  .directory .chamenu {
-    background: rgb(253, 43, 43);
-    grid-area: chamenu;
-  }
-  .directory .space {
-    grid-area: space;
-  }
-  .directory .space1 {
-    grid-area: space1;
-  }
-  .directory .solla {
-    padding: 1rem;
-    background: white;
-    grid-area: solla;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .ima1 img{
-    width: 100%;
-  }
-  .directory .auteco {
-    padding: 1rem;
-    background: white;
-    grid-area: auteco;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  
-  }
-  .directory .ternium {
-    grid-area: ternium;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .directory .union {
-    grid-area: union;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .directory .euro {
-    grid-area: euro;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .directory .soberana {
-    grid-area: soberana;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .directory .empaques {
-    grid-area: empaques;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .directory .provecol {
-    grid-area: provecol;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  }
-  .directory .text {
-    grid-area: text;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    box-shadow: 5px 5px 15px black;
-    border-radius: .5rem;
-  
-  }
-  .directory .footer{
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 2.5rem 0rem 2.5rem 11rem;
-    color: white;
-    grid-area:footer;
-    text-decoration: none;
-    line-height: 2.5rem;
-  }
-  .directory .footer2{
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 4rem 8rem 0rem 0rem;
-    color: white;
-    grid-area:footer2;
-  }
-  .solla h2{
-    text-align: center;
-  }
-  /*-------------------contact------------------------------------------------------*/
-  .contacto {
-    background: rgb(131, 181, 193);
-    font-family: 'Josefin Sans', sans-serif;
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr 1fr 15%;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:"logo     chamname   chamname   chamenu   chamenu"
-                        "space    continf    map        map       space1"
-                        "footer   footer     footer     footer2   footer2";
-  }
-  .contacto .logo {
-    background: rgb(253, 43, 43);
-    grid-area: logo;
-    border-radius: 0 0 0 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .contacto .chamname {
-    background: rgb(253, 43, 43);
-    grid-area: chamname;
-  }
-  .contacto .chamenu {
-    background: rgb(253, 43, 43);
-    grid-area: chamenu;
-  }
-  .contacto .space {
-    grid-area: space;
-  }
-  .contacto .space1 {
-    grid-area: space1;
-  }
-  .contacto .continf {
-    background: white;
-    grid-area: continf;
-    margin: 1rem;
-    border-radius: .5rem;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px black;
-    font-size: 1.2rem;
-  }
-  .contacto .map {
-    grid-area: map;
-    margin: 1rem;
-    border-radius: .5rem;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px black;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-  }
-  @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
-  .contacto .footer{
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 2.5rem 0rem 2.5rem 11rem;
-    color: white;
-    grid-area:footer;
-    text-decoration: none;
-    line-height: 2.5rem;
-  }
-  .contacto .footer2{
-    font-family: 'Syncopate', sans-serif;
-    background-color: #303031;
-    padding: 4rem 8rem 0rem 0rem;
-    color: white;
-    grid-area:footer2;
-  }
-  
+.im1, .im2, .im3, .im4, .im5, .im6, .im7, .im8, .im9, .im10, .im11, .im12{
+  padding: 3rem;
+}
+
+
