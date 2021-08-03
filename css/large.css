@@ -47,7 +47,7 @@ font-family: 'Dancing Script', cursive;
                         "footer   footer     footer      footer2    footer2";
   }
   .contehome .chamname,  .productos .chamname {
-    background: rgb(220, 190, 211);
+    background: rgb(67, 182, 146);
     grid-area: chamname;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ font-family: 'Dancing Script', cursive;
   }
   .contehome .chamenu,  .productos .chamenu {
     font-family: 'Syncopate', sans-serif;
-    background: rgb(220, 190, 211);
+    background: rgb(67, 182, 146);
     grid-area: chamenu;
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ font-family: 'Dancing Script', cursive;
     grid-area: space1;
   }
   .contehome .footer, .productos .footer {
-    background-color: #8c868c;
+    background-color: #4a5173;
     padding: 2.5rem 0rem 2.5rem 11rem;
     color: white;
     grid-area:footer;
@@ -79,7 +79,7 @@ font-family: 'Dancing Script', cursive;
     font-family: 'Montserrat', sans-serif;
   }
   .contehome .footer2, .productos .footer2{
-    background-color: #8c868c;
+    background-color: #4a5173;
     padding: 4rem 8rem 0rem 0rem;
     color: white;
     grid-area:footer2;
@@ -181,12 +181,15 @@ font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     color: rgb(29, 16, 26);
     text-decoration: none;
-    text-shadow: 2px 2px 14px #9895ab;
+    text-shadow: 2px 2px 9px #f9f8fa;
+  }
+  .moto {
+    text-shadow: 2px 2px 9px #f9f8fa;
   }
   .moto a{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    color: rgb(101, 115, 102);
+    color: rgb(24, 25, 24);
     padding-bottom: 2rem;
     text-decoration: none;
     text-shadow: 2px 2px 9px #f9f8fa;
@@ -255,9 +258,17 @@ font-family: 'Dancing Script', cursive;
   font-family: 'Montserrat', sans-serif;
 
 }
-.im1 img{
+.im1 img, .im2 img{
   width: 100%;
   box-shadow: 2px 2px 6px#171718;
+}
+.im3 img{
+height: 71%;
+width: 80%;
+box-shadow: 2px 2px 6px#171718;
+}
+.im3{
+  padding-left: ;
 }
 
 
